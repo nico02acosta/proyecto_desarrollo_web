@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Palanquin:wght@300;400;500;600;700&display=swap');
+.fontCairo{
+    font-family: $font-cairo;
+    font-weight: $tamanio-fuente-cairo;
+}
+.fontPalanquin{
+    font-family: $font-palanquin;
+    font-weight: $tamanio-fuente-palanquin;
+}
+.fontCairoFooterTitulo{
+    font-family: $font-cairo;
+    font-size: 1.75rem;
+    color: map-get($mapa-colores , color-blanco );
+    font-weight: 700;
+}
+.fontCairoFooterLink{
+    font-family: $font-cairo;
+    color: map-get($mapa-colores , color-blanco) !important;
+    font-weight: 600;
+}

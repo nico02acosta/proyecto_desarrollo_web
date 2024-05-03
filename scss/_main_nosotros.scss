@@ -1,0 +1,13 @@
+.bannerNosotros{
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    background-image: linear-gradient(to right, #0a0a9d40,rgba(0, 0, 0, 0.500),#0B0A9D40), url(../assets/img/banner/bannernos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width:750px){
+    .bannerNosotros{
+        background-position: center;
+    }
+}

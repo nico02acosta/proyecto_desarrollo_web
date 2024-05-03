@@ -1,0 +1,57 @@
+.bannerContacto{
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    background-image: linear-gradient(to right, #0a0a9d40,rgba(0, 0, 0, 0.500),#0B0A9D40), url(../assets/img/banner/bannerform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondoForm{
+    display: grid;
+    place-items: center;
+    height: 655px;
+    background-image: url(../assets/img/fondoform.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+.contenedorForm{
+    border: 1px solid rgba(220, 220, 220, 0.223);
+    border-radius: 15px;
+    background-color: #d5d5d524;
+    margin-bottom: 10px;
+    height: 655px;
+}
+.inpColor{
+    border: 1px solid rgba(220, 220, 220, 0.223);
+}
+.btEnviar{
+    background-color: rgb(183, 240, 243);
+    &:active{
+        background-color: rgb(144, 199, 203);;
+    }
+}
+.btLimpiar{
+    background-color: rgb(251, 198, 149);
+    &:active{
+        background-color: rgb(218, 166, 117);
+    }
+}
+@media screen and (max-width:750px){
+    .bannerContacto{
+        background-position: center;
+    }
+    .fondoForm{
+        background-image: none;
+        height: initial;
+        padding: initial;
+        border-radius: initial;
+        color: black !important;
+    }
+    .contenedorForm{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}

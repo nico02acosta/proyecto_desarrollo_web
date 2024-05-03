@@ -1,0 +1,44 @@
+.colorFooter{
+    background-color: #42b1bd;
+}
+.bordeFooter{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-right: 1px solid map-get($mapa-colores , color-blanco);
+}
+.linkFooter{
+    list-style: none;
+    padding: 0;
+}
+.linkNav{
+    text-decoration: none;
+    color: map-get($mapa-colores , color-negro);
+}
+.margenRedes{
+    margin-left: 40px;
+}
+.centrarMobile{
+    display: inline-block
+}
+.iconRedes{
+    color: map-get($mapa-colores , color-blanco );
+}
+.colorIconUbi{
+    color: rgb(209, 0, 0);
+}
+@media screen and (max-width:750px){
+    .centrarMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .margenRedes{
+        margin-left: initial;
+    }
+    .bordeFooter{
+        margin-top: initial;
+        margin-bottom: initial;
+        border-right: initial;
+        border-bottom: 1px solid map-get($mapa-colores , color-blanco);
+    }
+}

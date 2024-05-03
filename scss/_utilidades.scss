@@ -1,0 +1,81 @@
+.colorAyuda{
+    background-color: map-get($mapa-colores , color-ayuda);
+}
+.letrasBlancas{
+    color: map-get($mapa-colores , color-blanco) !important;
+    &:hover{
+        color: rgb(208, 208, 208) !important;
+    }
+    &:active{
+        color: rgb(143, 143, 143) !important;
+    }
+}
+.pagActiva{
+    color: #63d8c2 !important;
+    &:hover{
+        color: #23c3a0 !important;
+    }
+    &:active{
+        color: #319882 !important;
+    }
+}
+.sombraTexto{
+    text-shadow: 0 0 15px black;
+}
+.tituloPag{
+    color: map-get($mapa-colores , color-blanco) !important;
+}
+.contenidoPrincipal{
+    background-color: #FEF6FF;
+}
+.fondoTarjetas{
+    @include tarjeta(#e7e5ec);
+    border-radius: 5px;
+}
+.senialador{
+    color: #860000 !important;
+}
+.linksRandoms{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    &:hover{
+        color: rgb(160, 160, 160);
+    }
+}
+.bordeLinks{
+    border-bottom: none;
+    transition: border-bottom 1s ease, transform 0.5s ease;
+    &:hover{
+        transform: scale(1.05);
+        border-bottom: 1px solid map-get($mapa-colores , color-blanco );
+    }
+}
+.bordeLinksActivo{
+    border-bottom: none;
+    transition: border-bottom 1s ease, transform 0.5s ease;
+    &:hover{
+        transform: scale(1.05);
+        border-bottom: 1px solid #6cb9a8;
+    }
+}
+.negritas{
+    font-weight: 800;
+}
+.overflowHid{
+    overflow: hidden;
+}
+@media screen and (max-width:750px){
+    .bordeLinks{
+        &:hover{
+            transform: scale(1);
+            border-bottom: none;
+        }
+    }
+    .bordeLinksActivo{
+        &:hover{
+            transform: scale(1);
+            border-bottom: none;
+        }
+    }
+}

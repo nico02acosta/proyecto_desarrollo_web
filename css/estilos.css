@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Palanquin:wght@300;400;500;600;700&display=swap");
+.fontCairo {
+  font-family: "Cairo";
+  font-weight: 700;
+}
+
+.fontPalanquin {
+  font-family: "Palanquin";
+  font-weight: 500;
+}
+
+.fontCairoFooterTitulo {
+  font-family: "Cairo";
+  font-size: 1.75rem;
+  color: #fafafa;
+  font-weight: 700;
+}
+
+.fontCairoFooterLink {
+  font-family: "Cairo";
+  color: #fafafa !important;
+  font-weight: 600;
+}
+
+.colorAyuda {
+  background-color: rgb(208, 144, 67);
+}
+
+.letrasBlancas {
+  color: #fafafa !important;
+}
+.letrasBlancas:hover {
+  color: rgb(208, 208, 208) !important;
+}
+.letrasBlancas:active {
+  color: rgb(143, 143, 143) !important;
+}
+
+.pagActiva {
+  color: #63d8c2 !important;
+}
+.pagActiva:hover {
+  color: #23c3a0 !important;
+}
+.pagActiva:active {
+  color: #319882 !important;
+}
+
+.sombraTexto {
+  text-shadow: 0 0 15px black;
+}
+
+.tituloPag {
+  color: #fafafa !important;
+}
+
+.contenidoPrincipal {
+  background-color: #FEF6FF;
+}
+
+.fondoTarjetas {
+  background-color: #e7e5ec;
+  border-radius: 5px;
+}
+
+.senialador {
+  color: #860000 !important;
+}
+
+.linksRandoms {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.linksRandoms:hover {
+  color: rgb(160, 160, 160);
+}
+
+.bordeLinks {
+  border-bottom: none;
+  transition: border-bottom 1s ease, transform 0.5s ease;
+}
+.bordeLinks:hover {
+  transform: scale(1.05);
+  border-bottom: 1px solid #fafafa;
+}
+
+.bordeLinksActivo {
+  border-bottom: none;
+  transition: border-bottom 1s ease, transform 0.5s ease;
+}
+.bordeLinksActivo:hover {
+  transform: scale(1.05);
+  border-bottom: 1px solid #6cb9a8;
+}
+
+.negritas {
+  font-weight: 800;
+}
+
+.overflowHid {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+  .bordeLinks:hover {
+    transform: scale(1);
+    border-bottom: none;
+  }
+  .bordeLinksActivo:hover {
+    transform: scale(1);
+    border-bottom: none;
+  }
+}
+header {
+  z-index: 9;
+}
+header .colorHeader {
+  background-color: rgba(0, 196, 218, 0.4352941176);
+}
+header .logoHeader {
+  width: 50px;
+}
+
+.bannerIndex {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannerindex.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerPrincipal {
+  display: flex;
+  height: 100vh;
+}
+.bannerPrincipal .imgBanner {
+  height: 100%;
+  width: 100%;
+}
+
+.tarjeta {
+  background-color: rgba(213, 213, 213, 0.1411764706);
+  border: 1px solid rgba(220, 220, 220, 0.223);
+  border-radius: 10px;
+  width: 75vw;
+}
+.tarjeta .textoUbicacionUno {
+  text-align: right;
+  margin: 25px;
+}
+.tarjeta .textoUbicacionDos {
+  text-align: left;
+  margin: 25px;
+}
+.tarjeta .imgTarjeta {
+  width: 100%;
+  height: 250px;
+}
+
+.opiniones {
+  border: 1px solid rgba(220, 220, 220, 0.223);
+  background-color: rgba(213, 213, 213, 0.1411764706);
+  border-radius: 20px;
+}
+.opiniones .contenedorImgOpinion {
+  display: flex;
+  justify-content: center;
+}
+.opiniones .contenedorImgOpinion .imgOpinion {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .bannerIndex {
+    background-position: left;
+  }
+  .tarjeta {
+    width: initial;
+  }
+  .tarjeta .textoUbicacionUno {
+    text-align: center;
+  }
+  .tarjeta .textoUbicacionDos {
+    text-align: center;
+  }
+  .tarjeta .imgTarjeta {
+    height: initial;
+  }
+}
+.bannerDestino {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannerdest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tarjetaCarrusel {
+  background-color: rgba(213, 213, 213, 0.1411764706);
+  border: 1px solid rgba(220, 220, 220, 0.223);
+  border-radius: 15px;
+  padding: 5px;
+  width: 75%;
+  margin: 15px auto;
+}
+.tarjetaCarrusel .imgCarrusel {
+  object-fit: cover;
+  border-radius: 15px;
+  max-height: 525px;
+}
+
+@media screen and (max-width: 750px) {
+  .bannerDestino {
+    background-position: center;
+  }
+  .tarjetaCarrusel {
+    width: 85%;
+  }
+  .tarjetaCarrusel .imgCarrusel {
+    max-height: 230px;
+  }
+}
+.bannerServicios {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannerserv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tarjetaServ {
+  background-color: rgba(213, 213, 213, 0.1411764706);
+  border: 1px solid rgba(220, 220, 220, 0.223);
+  border-radius: 15px;
+}
+.tarjetaServ .imgServ {
+  width: 100%;
+  height: 185px;
+  border-radius: 15px;
+  object-fit: content;
+}
+
+@media screen and (max-width: 750px) {
+  .bannerServicios {
+    background-position: center;
+  }
+  .imgServ {
+    height: initial;
+  }
+}
+.bannerNosotros {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannernos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .bannerNosotros {
+    background-position: center;
+  }
+}
+.bannerContacto {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannerform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondoForm {
+  display: grid;
+  place-items: center;
+  height: 655px;
+  background-image: url(../assets/img/fondoform.png);
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.contenedorForm {
+  border: 1px solid rgba(220, 220, 220, 0.223);
+  border-radius: 15px;
+  background-color: rgba(213, 213, 213, 0.1411764706);
+  margin-bottom: 10px;
+  height: 655px;
+}
+
+.inpColor {
+  border: 1px solid rgba(220, 220, 220, 0.223);
+}
+
+.btEnviar {
+  background-color: rgb(183, 240, 243);
+}
+.btEnviar:active {
+  background-color: rgb(144, 199, 203);
+}
+
+.btLimpiar {
+  background-color: rgb(251, 198, 149);
+}
+.btLimpiar:active {
+  background-color: rgb(218, 166, 117);
+}
+
+@media screen and (max-width: 750px) {
+  .bannerContacto {
+    background-position: center;
+  }
+  .fondoForm {
+    background-image: none;
+    height: initial;
+    padding: initial;
+    border-radius: initial;
+    color: black !important;
+  }
+  .contenedorForm {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+.img404 {
+  width: 225px;
+}
+
+.colorFooter {
+  background-color: #42b1bd;
+}
+
+.bordeFooter {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-right: 1px solid #fafafa;
+}
+
+.linkFooter {
+  list-style: none;
+  padding: 0;
+}
+
+.linkNav {
+  text-decoration: none;
+  color: black;
+}
+
+.margenRedes {
+  margin-left: 40px;
+}
+
+.centrarMobile {
+  display: inline-block;
+}
+
+.iconRedes {
+  color: #fafafa;
+}
+
+.colorIconUbi {
+  color: rgb(209, 0, 0);
+}
+
+@media screen and (max-width: 750px) {
+  .centrarMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .margenRedes {
+    margin-left: initial;
+  }
+  .bordeFooter {
+    margin-top: initial;
+    margin-bottom: initial;
+    border-right: initial;
+    border-bottom: 1px solid #fafafa;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
